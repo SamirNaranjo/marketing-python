@@ -8,18 +8,18 @@ const navigation = {
       { name: 'Commerce', href: '#' },
       { name: 'Insights', href: '#' },
     ],
-    support: [
-      { name: 'Pricing', href: '#' },
-      { name: 'Documentation', href: '#' },
-      { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
+    contacto: [
+      { name: 'Contacto', href: '/contacto' }
+ 
     ],
     company: [
-      { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'Casos', href: '/casos' },
+      { name: 'Blog', href: '/blog' },
+      { name: 'Servicios', href: '/services' },
+      { name: 'Nosotros', href: '/nosotros' },
+      { name: 'Carreras', href: '/carreras' },
+      { name: 'Blog', href: '/blog' },
+      { name: 'Contacto', href: '/contacto' },
     ],
     legal: [
       { name: 'Claim', href: '#' },
@@ -94,7 +94,7 @@ const navigation = {
 
 const Footer = () => {
     return (
-        <footer className="bg-white" aria-labelledby="footer-heading">
+        <footer className="bg-gray-50" aria-labelledby="footer-heading">
             <h2 id="footer-heading" className="sr-only">
             Footer
             </h2>
@@ -103,12 +103,8 @@ const Footer = () => {
                 <div className="space-y-8 xl:col-span-1">
                 <img
                     className="h-10"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=300"
-                    alt="Company name"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=300"   
                 />
-                <p className="text-base text-gray-500">
-                    Making the world a better place through constructing elegant hierarchies.
-                </p>
                 <div className="flex space-x-6">
                     {navigation.social.map((item) => (
                     <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
@@ -121,8 +117,8 @@ const Footer = () => {
                 <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                    <h3 className="text-base font-medium text-gray-900">Solutions</h3>
-                    <ul role="list" className="mt-4 space-y-4">
+                    <h3 className="text-base font-medium text-gray-900">Visit us</h3>
+                    <ul className="mt-4 space-y-4">
                         {navigation.solutions.map((item) => (
                         <li key={item.name}>
                             <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
@@ -133,9 +129,9 @@ const Footer = () => {
                     </ul>
                     </div>
                     <div className="mt-12 md:mt-0">
-                    <h3 className="text-base font-medium text-gray-900">Support</h3>
-                    <ul role="list" className="mt-4 space-y-4">
-                        {navigation.support.map((item) => (
+                    <h3 className="text-base font-medium text-gray-900">Contacto</h3>
+                    <ul  className="mt-4 space-y-4">
+                        {navigation.contacto.map((item) => (
                         <li key={item.name}>
                             <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
                             {item.name}
@@ -148,7 +144,7 @@ const Footer = () => {
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                     <div>
                     <h3 className="text-base font-medium text-gray-900">Company</h3>
-                    <ul role="list" className="mt-4 space-y-4">
+                    <ul  className="mt-4 space-y-4">
                         {navigation.company.map((item) => (
                         <li key={item.name}>
                             <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
@@ -159,8 +155,8 @@ const Footer = () => {
                     </ul>
                     </div>
                     <div className="mt-12 md:mt-0">
-                    <h3 className="text-base font-medium text-gray-900">Legal</h3>
-                    <ul role="list" className="mt-4 space-y-4">
+                    <h3 className="text-base font-medium text-gray-900">Services</h3>
+                    <ul  className="mt-4 space-y-4">
                         {navigation.legal.map((item) => (
                         <li key={item.name}>
                             <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
@@ -174,7 +170,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="mt-12 border-t border-gray-200 pt-8">
-                <p className="text-base text-gray-400 xl:text-center">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+                <p className="text-base text-gray-400 xl:text-center">&copy; 2023 SamDev by Kraken Solutions, Inc. All rights reserved.</p>
             </div>
             </div>
         </footer>
